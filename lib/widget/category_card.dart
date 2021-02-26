@@ -16,8 +16,10 @@ class CategoryCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => DetailScreen(_imageUrl)));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => DetailScreen(_imageUrl, _title)));
       },
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),

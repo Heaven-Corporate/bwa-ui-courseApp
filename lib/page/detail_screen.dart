@@ -4,8 +4,9 @@ import 'package:ui_onlinecourses/widget/custom_tile.dart';
 
 class DetailScreen extends StatelessWidget {
   final _imageUrl;
+  final _title;
 
-  const DetailScreen(this._imageUrl);
+  const DetailScreen(this._imageUrl, this._title);
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +60,7 @@ class DetailScreen extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'Design Thinking',
+                      _title,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 28,
